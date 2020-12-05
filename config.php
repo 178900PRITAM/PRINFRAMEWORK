@@ -10,5 +10,6 @@ if ($load['USE_DB'] == true) {
 		'password' => '',
 		'database' => 'database',
 	);
+	//mysqlconnect
 	$mysql = mysqli_connect($database['host'],$database['username'],$database['password'],$database['database']);
 }
