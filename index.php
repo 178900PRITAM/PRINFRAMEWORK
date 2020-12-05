@@ -1,5 +1,6 @@
 <?php
 include 'core/prinCORE.php';
+if (isset($_GET['page'])) {}else{header("Location: $default");}
 $cont = array_filter($controller, function($e){
         return $e['name'] == $_GET['page'];
     });
