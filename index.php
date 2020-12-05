@@ -1,6 +1,9 @@
 <?php
 include 'core/prinCORE.php';
-foreach ($controller as $co) {
+$cont = array_filter($controller, function($e){
+        return $e['name'] == $_GET['page'];
+    });
+foreach ($cont as $co) {
 	if (isset($_GET['page'])) {
 		if ($co['name'] == $_GET['page']) {
 			if (file_exists('views/'.$co['views'].'')) {
@@ -23,8 +26,8 @@ foreach ($controller as $co) {
 			include 'views/error/404.php';
 			}
 		}
-		die();
 	}else{
 		header("Location: $default");
 	}
+
 }
