@@ -51,3 +51,22 @@ function loadfile($file,$ext){
 function redirect($url){
 	echo '<script> document.location.href="'.$url.'"; </script>';
 }
+//Security
+if ($_GET['page'] == "core") {
+	//header("Location: ../403");
+	die(include 'system/403.php');
+}elseif ($_GET['page'] == "core/") {
+	die(include 'system/403.php');
+}
+if ($_GET['page'] == "system") {
+	//header("Location: ../403");
+	die(include 'system/403.php');
+}elseif ($_GET['page'] == "system/") {
+	die(include 'system/403.php');
+}
+if ($_GET['page'] == "views") {
+	//header("Location: ../403");
+	die(include 'system/403.php');
+}elseif ($_GET['page'] == "views/") {
+	die(include 'system/403.php');
+}
