@@ -18,7 +18,7 @@
 	}
 </style>
 <div class="error">
-	<h5><error>Something went wrong</error></h5>
+	<h5>Something went wrong</h5>
 </div>
 </body>
 </html>
