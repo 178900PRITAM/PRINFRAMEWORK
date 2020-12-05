@@ -30,8 +30,10 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/178900PRITAM/PRINFRAMEWORK/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Your Bascic php code<br>
+	But there was a change borught by Prin Framework<br>
+	chacnge was<br>
+	You dont have to create new mysqliconnect<br>
+	mysqli connect var is  $connect<br>
+	just enabe in config.php USE_DB = true<br>
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
