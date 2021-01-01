@@ -18,7 +18,7 @@
 	}
 </style>
 <div class="error">
-	<h5>Error file of <?=$_GET['page']?> Not Found</h5>
+	<h5>Error file of <?=$_GET['page']?> <?php $_GET = null ; ?> Not Found</h5>
 </div>
 </body>
 </html>
