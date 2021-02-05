@@ -11,11 +11,11 @@ foreach ($cont as $co) {
 				include 'views/'.$co['views'].'';
 			}else{
 			if ($not_found == false) {
-			$error = include 'system/fileerror.php';
+			$error = file_get_contents( 'system/fileerror.php' );
 			$error = str_replace("{{ page }}", $_GET['page'], $error);
 			return $error;
 			}else{
-			$error = include 'views/error/404.php';
+			$error = file_get_contents( 'views/error/404.php');
 			$error = str_replace("{{ page }}", $_GET['page'], $error);
 			return $error;
 			}
